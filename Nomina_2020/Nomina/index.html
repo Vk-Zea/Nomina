@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nomina</title> 
+    <script src="Calculo.js"></script>
+  </head>
+<body>
+
+  <div id="formu">
+    <h1>Nomina</h1><hr>
+<div style="width: 50%; margin-top:15px; margin-left:25%; margin-right:25%;" id="Forms">
+
+    <label for="exampleInputEmail1">Nombre</label>
+    <input name="Nombre" type="text" class="form-control" id="Nombre"><br><br><br>
+
+    <label for="exampleInputEmail1">Salario Basico</label>
+    <input name="Salario" type="number" class="form-control" id="SalarioBasico"><br><br><br>
+
+    <label for="exampleInputPassword1">Dias Liquidados</label>
+    <input name="DiasLiquidacion" type="number" class="form-control" id="DiasLiquidados"><br><br><br>
+
+    <label for="exampleInputPassword1">Horas Extra</label>
+    <input name="HorasExtra" type="number" class="form-control" id="HorasExtra"><br><br><br>
+
+  <button id="Boton" onClick="CalcularNomina()" style="width: 20%; margin-left: 40%; margin-right: 40%;" class="btn btn-primary">Enviar</button>
+</div>
+
+<div style="display: none; width: 70%; margin-top:15px; overflow: auto;" id="Tabla">
+<table class="table" style="width:200%;" id="tabla">
+  
+        <thead>
+            <tr Style= color:blue >
+              <th scope="col">Nombre</th>
+              <th scope="col">Salario Basico</th>
+              <th scope="col">Dias liquidados</th>
+              <th scope="col">Salario Devengado</th>
+              <th scope="col">Horas Extra</th>
+              <th scope="col">Auxilio Transporte</th>
+              <th scope="col">Total Devengado</th>
+              <th scope="col">Salud</th>
+              <th scope="col">Pension</th>
+              <th scope="col">Pago Neto</th>
+            </tr>
+          </thead>
+          <tbody id="mybody">
+          </tbody>
+        </table>
+  <button id="Boton" onClick="impiar()" >Retornar</button>
+</div>
+<script>
+</script>
+</body>
+</html>
+
